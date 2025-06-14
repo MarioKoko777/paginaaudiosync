@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - AudioSync</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="AudioSync Logo">
+                <div>
+                    <span class="logo-text">AUDIOSYNC</span>
+                    <span class="logo-slogan">Plugins for Artists</span>
+                </div>
+            </div>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="descargas.html"><i class="fas fa-download"></i> Descargas</a></li>
+                    <li><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+                    <li><a href="aprendizaje.html"><i class="fas fa-graduation-cap"></i> Aprendizaje</a></li>
+                    <li><a href="soporte.html" class="active"><i class="fas fa-headset"></i> Soporte</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <h1>Soporte Técnico</h1>
+            <p>Estamos aquí para ayudarte con cualquier problema o pregunta</p>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="section">
+        <div class="container">
+            <div class="support-options">
+                <div class="support-option">
+                    <h3><i class="fas fa-question-circle"></i> Centro de Ayuda</h3>
+                    <p>Encuentra respuestas a las preguntas más frecuentes sobre instalación, activación y uso de nuestros productos.</p>
+                    <a href="#faq" class="btn btn-primary">Ver preguntas frecuentes</a>
+                </div>
+                
+                <div class="support-option">
+                    <h3><i class="fas fa-comments"></i> Chat en Vivo</h3>
+                    <p>Conéctate con nuestro equipo de soporte en tiempo real para resolver tus dudas inmediatamente.</p>
+                    <a href="#" class="btn btn-primary" id="chat-button">Iniciar chat</a>
+                    <p id="chat-status" style="margin-top: 10px; font-size: 14px; color: var(--primary);"><i class="fas fa-circle" style="color: #4CAF50;"></i> En línea ahora</p>
+                </div>
+            </div>
+            
+            <div id="faq" class="faq-section">
+                <h2 style="margin-bottom: 30px;">Preguntas Frecuentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cómo instalo mis productos AudioSync?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Descarga el instalador desde nuestra página de Descargas, ejecuta el archivo y sigue las instrucciones del asistente de instalación. Asegúrate de tener permisos de administrador en tu computadora.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué sistemas operativos son compatibles?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestros productos son compatibles con Windows 10/11 (64-bit) y macOS 10.15 o superior. Algunos plugins también están disponibles en versión para Linux.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo usar mis plugins en múltiples computadoras?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, puedes activar tus productos en hasta 3 computadoras simultáneamente con una sola licencia. Para más dispositivos, contáctanos para opciones de licencias adicionales.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cómo actualizo a la última versión?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las actualizaciones están disponibles en tu cuenta de usuario. Descarga la última versión e instálala sobre la existente. Tus configuraciones y presets se mantendrán intactos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Ofrecen descuentos para estudiantes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos un 40% de descuento para estudiantes con identificación válida. Contáctanos con una copia de tu identificación estudiantil para obtener tu código de descuento.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2 style="margin-bottom: 30px;">Contáctanos</h2>
+                <form id="support-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product">Producto relacionado</label>
+                        <select id="product" name="product">
+                            <option value="">Selecciona un producto</option>
+                            <option value="daw">DAW AudioSync</option>
+                            <option value="synth">Synth Master 2.0</option>
+                            <option value="compressor">Multiband Compressor</option>
+                            <option value="vocal">Vocal Processor</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tu mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="assets/logo-white.png" alt="AudioSync Logo">
+                        <div>
+                            <span class="logo-text">AUDIOSYNC</span>
+                        </div>
+                    </div>
+                    <p>Herramientas innovadoras para productores musicales creativos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> DAW AudioSync</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Sintetizadores</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Efectos</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Samples</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tutoriales</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Documentación</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Comunidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Compañía</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Sobre nosotros</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Trabaja con nosotros</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Soporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 AudioSync. Todos los derechos reservados. | <a href="#">Política de privacidad</a> | <a href="#">Términos del servicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Additional support page functionality
+        document.getElementById('support-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo dentro de 24 horas.');
+            this.reset();
+        });
+        
+        document.getElementById('chat-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('El chat en vivo se abrirá en una nueva ventana. Nuestro horario de atención es de 9am a 6pm, de lunes a viernes.');
+        });
+    </script>
+</body>
+</html>
